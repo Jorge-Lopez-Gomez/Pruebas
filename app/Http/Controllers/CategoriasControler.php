@@ -14,6 +14,7 @@ class CategoriasControler extends Controller
     public function index()
     {
         //
+        return view('Categorias.index');
     }
 
     /**
@@ -24,7 +25,10 @@ class CategoriasControler extends Controller
     public function create()
     {
         //
+         return view('Categorias.create');
     }
+
+
 
     /**
      * Store a newly created resource in storage.
@@ -46,6 +50,7 @@ class CategoriasControler extends Controller
     public function show($id)
     {
         //
+         return view('Categorias.show');
     }
 
     /**
@@ -57,6 +62,7 @@ class CategoriasControler extends Controller
     public function edit($id)
     {
         //
+         return view('Categorias.edit');
     }
 
     /**

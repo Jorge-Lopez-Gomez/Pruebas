@@ -4,11 +4,13 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Encargado del mercado</title>
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/font-awesome.min.css" rel="stylesheet">
-	<link href="css/datepicker3.css" rel="stylesheet">
-	<link href="css/styles.css" rel="stylesheet">
-	@yield('stilos')
+	<link rel="stylesheet" type="text/css" href="{{ asset('/static/css/bootstrap.min.css') }}">
+	<link rel="stylesheet" type="text/css"  href="{{ asset('/static/css/font-awesome.min.css') }}">
+	<link rel="stylesheet" type="text/css"  href="{{ asset('/static/css/datepicker3.css') }}">
+	<link rel="stylesheet" type="text/css"  href="{{ asset('/static/css/styles.css') }}">
+
+
+
 	<!--Custom Font-->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 	<!--[if lt IE 9]>
@@ -36,7 +38,7 @@
 				<img src="" class="img-responsive" alt="">
 			</div>
 			<div class="profile-usertitle">
-				<div class="profile-usertitle-name">fulanito de tal</div>
+				<div class="profile-usertitle-name">Jorge Lopez Gomez</div>
 				<div class="profile-usertitle-status"><span class="indicator label-success"></span>Online</div>
 			</div>
 			<div class="clear"></div>
