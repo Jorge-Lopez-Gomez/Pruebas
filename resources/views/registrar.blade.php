@@ -27,6 +27,7 @@
     </div>
     <div class="form-group">
         <label for="email">Correo electronico:</label>
+        <br>
         <input type="email" name="email" id="email">
         <span id="error_email"></span>
     </div>
@@ -52,7 +53,7 @@
         {
             if(!filter.test(email))
             {
-                $('#error_email').html('<label class="bg-danger text-white"><i class="fas fa-times"></i> Correo invalido.Ingrese un correo Valido</label>');
+                $('#error_email').html('<label class="bg-danger text-white"><i class="fas fa-times"></i> Correo invalido</label>');
                 $('#email').addClass('has-error');
                 $('#register').attr('disabled', 'disabled');
             }
@@ -66,13 +67,13 @@
                     {
                         if(result == 'unique')
                         {
-                            $('#error_email').html('<label class="bg-success text-white"><i class="fas fa-check"></i>Quiero usar mi dirección actual de correo electrónico</label>');
+                            $('#error_email').html('<label class="bg-success text-white"><i class="fas fa-check"></i>Correo electronico permitido</label>');
                             $('#email').removeClass('has-error');
                             $('#register').attr('disabled', false);
                         }
                         else
                         {
-                            $('#error_email').html('<label class="bg-danger text-white"><i class="fas fa-times"></i>Ya existe una cuenta de tienda ittg con esta dirección de correo electrónico</label>');
+                            $('#error_email').html('<label class="bg-danger text-white"><i class="fas fa-times"></i>Correo electronico existente en la tienda</label>');
                             $('#email').addClass('has-error');
                             $('#register').attr('disabled', 'disabled');                        
                         }
@@ -82,7 +83,7 @@
         }
         else
         {
-            $('#error_email').html('<label class="bg-warning text-dark"><i class="fas fa-times"></i>Este campo es obligatorio</label>');
+            $('#error_email').html('<label class="bg-warning text-dark"><i class="fas fa-times"></i>No cumple con lo requerido</label>');
             $('#email').addClass('has-error');
             $('#register').attr('disabled', 'disabled');               
         }
